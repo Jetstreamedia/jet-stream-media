@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zubaer | Digital Marketer</title>
+<meta name="description" content="Zubaer's portfolio: Meta Ads, SEO, ad creative and AI UGC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F6F4; --ink:#15161A; --mute:#6B6D75; --line:#DEDEDA; --accent:#5A3BEB; --surface:#FFFFFF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#121317;--ink:#F1F1EE;--mute:#9A9CA5;--line:#2A2C33;--accent:#9C86FF;--surface:#1A1B21}
+}
+:root[data-theme="dark"]{--bg:#121317;--ink:#F1F1EE;--mute:#9A9CA5;--line:#2A2C33;--accent:#9C86FF;--surface:#1A1B21}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo{font-family:'Bricolage Grotesque','DM Sans',sans-serif;font-weight:700;letter-spacing:-0.03em;line-height:1.05}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+.wrap{width:min(1080px,100% - 48px);margin-inline:auto}
+
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);padding-top:env(safe-area-inset-top,0px)}
+.bar{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px}
+nav{display:flex;gap:28px;font-size:15px;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+
+.hero{padding:clamp(72px,14vw,160px) 0 clamp(72px,10vw,120px)}
+.hero h1{font-size:clamp(44px,9.5vw,120px);max-width:11em}
+.hero h1 em{font-style:normal;color:var(--mute)}
+.hero p{max-width:34em;margin-top:32px;color:var(--mute);font-size:19px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px}
+.btn{padding:14px 26px;border-radius:999px;font-weight:500;font-size:16px;border:1px solid var(--ink);transition:background .2s,color .2s,border-color .2s}
+.btn.fill{background:var(--ink);color:var(--bg)}
+.btn.fill:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.line:hover{border-color:var(--accent);color:var(--accent)}
+
+section{padding:clamp(64px,9vw,110px) 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:1fr 2fr;gap:40px}
+h2{font-size:clamp(30px,4vw,44px)}
+.lead p{color:var(--mute);margin-bottom:18px;max-width:36em}
+.lead p:first-child{color:var(--ink);font-size:21px;line-height:1.5}
+
+/* Skills as tag list */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:15px}
+.chips span.learn{border-style:dashed;color:var(--mute)}
+.note{margin-top:18px;color:var(--mute);font-size:14px}
+
+/* Work as rows */
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;padding:34px 0;border-bottom:1px solid var(--line);transition:padding .25s}
+.row h3{font-size:clamp(24px,3vw,32px);transition:color .2s}
+.row p{color:var(--mute);max-width:32em}
+.row:hover h3{color:var(--accent)}
+.row:hover{padding-left:12px}
+
+/* Services */
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:44px 48px}
+.svc h3{font-size:22px;margin-bottom:8px}
+.svc p{color:var(--mute)}
+
+/* Contact */
+.contact{padding:clamp(80px,12vw,140px) 0}
+.contact h2{font-size:clamp(40px,8vw,96px);max-width:9em}
+.contact a.mail{display:inline-block;margin-top:36px;font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(22px,3.4vw,34px);border-bottom:2px solid var(--accent);padding-bottom:4px}
+.contact a.mail:hover{color:var(--accent)}
+
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:768px){
+  nav{gap:18px;font-size:14px}
+  .grid,.row,.svc{grid-template-columns:1fr}
+  .svc{gap:32px}
+  .row{gap:8px}
+}
+@media (max-width:420px){nav a:first-child{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="logo">Zubaer</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Marketing that reaches the right people. <em>Online.</em></h1>
+    <p>I'm Zubaer, a digital marketer working with Meta Ads, SEO, ad creative and AI-powered UGC content to help businesses grow.</p>
+    <div class="cta">
+      <a href="#work" class="btn fill">View my work</a>
+      <a href="#contact" class="btn line">Work with me</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap grid">
+      <h2>About</h2>
+      <div class="lead">
+        <p>Good marketing isn't about getting attention. It's about reaching the right people with the right message.</p>
+        <p>I'm building my career in digital marketing, with a focus on helping businesses grow through effective online advertising and content.</p>
+        <p>Right now I'm going deeper into tracking, analytics and campaign optimization, so every ad I run can be measured and improved.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap grid">
+      <h2>Skills</h2>
+      <div>
+        <div class="chips">
+          <span>Meta Ads</span>
+          <span>Audience targeting</span>
+          <span>Creative testing</span>
+          <span>SEO</span>
+          <span>Keyword research</span>
+          <span>Ad creative</span>
+          <span>AI UGC</span>
+          <span class="learn">GA4</span>
+          <span class="learn">Conversion tracking</span>
+        </div>
+        <p class="note">Dashed tags are skills I'm currently developing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2 style="margin-bottom:40px">Featured work</h2>
+      <div class="rows">
+        <div class="row"><h3>Paid advertising</h3><p>Meta campaigns and creative concepts built to reach targeted audiences on Facebook and Instagram.</p></div>
+        <div class="row"><h3>AI UGC ads</h3><p>Realistic UGC-style video and image concepts made for product advertising.</p></div>
+        <div class="row"><h3>Ad creative</h3><p>Scroll-stopping creatives and product-focused visual concepts.</p></div>
+        <div class="row"><h3>SEO projects</h3><p>Search optimization and content strategies that improve online visibility.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap grid">
+      <h2>How I can help</h2>
+      <div class="svc">
+        <div><h3>Meta advertising</h3><p>Campaign setup, targeting, creative testing and ad strategy.</p></div>
+        <div><h3>SEO</h3><p>Research, on-page optimization and content-focused search strategy.</p></div>
+        <div><h3>Ad creative</h3><p>Concepts for social media ads and product campaigns.</p></div>
+        <div><h3>AI UGC content</h3><p>AI-generated UGC-style content for modern social marketing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Have a project in mind? Let's talk.</h2>
+      <!-- CHANGE THIS EMAIL -->
+      <a class="mail" href="mailto:your@email.com">your@email.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Zubaer</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
